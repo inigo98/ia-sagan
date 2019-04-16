@@ -1,0 +1,243 @@
+.center{
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    .wrapper_center{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 96px 0;
+        h2{
+            color: $grayNano;
+            font-size: 36px;
+            font-weight: 100;
+            text-align: center;
+            margin-bottom: 0;
+            text-transform: capitalize;
+        }
+        h1{
+            color: $blueNano;
+            font-size: 64px;
+            font-weight: 200;
+            text-align: center;
+            text-transform: capitalize;
+            margin: -8px 0 24px 0;
+            @media screen and (max-width: 480px){
+                font-size: 44px;
+            }
+        }
+        p{
+            color: $blackNano;
+            font-size: 16px;
+            text-align: center;
+            max-width: 450px;
+            @media screen and (max-width: 768px){ 
+                max-width: 300px;
+            }
+        }
+        img{
+            margin-top: 16px;
+            width: 550px;
+            height: auto;
+            @media screen and (max-width: 768px){ 
+                max-width: 300px;
+            }
+        }
+        .white_wrapper{
+            margin-top: 32px;
+            width: 400px;
+            height: 50px;
+            border-radius: 50px;
+            box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+            background-color: white;
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 480px){
+                width: 300px;
+            }
+            .rectangle{
+                width: 15px;
+                height: 40px;
+                margin: 0 2px;
+                background-color: #03b3e3;
+                border-radius: 5px;
+            }
+            .rectangle:first-child {
+                margin: 0 2px 0 32px;
+            }
+            .rectangle:nth-child(10) {
+                @media screen and (max-width: 600px){
+                    display: none;
+                }
+            }
+            .rectangle:nth-child(11) {
+                @media screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+            .rectangle:nth-child(12) {
+                @media screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+            .rectangle:nth-child(13) {
+                @media screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+            .rectangle:nth-child(14) {
+                @media screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+            .rectangle:nth-child(15) {
+                @media screen and (max-width: 480px){
+                    display: none;
+                }
+            }
+            img{
+                height: 40px;
+                width: auto;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    .image_back{
+        padding-top: 64px;
+        background-image: url(../Images/efecto-regenerativo-background.jpg);
+        background-position: top;
+        background-size: cover;
+    }
+    .blue_image{
+        padding-bottom: 64px;
+        z-index: 2;
+        background-color: #03b3e3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        .benefits{
+            margin-top: 32px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            max-width: 1100px;
+            flex-wrap: wrap;
+            div{
+                width: 100%;
+                h2{
+                    color: white;
+                    width: auto;
+                    font-size: 36px;
+                    text-align: left;
+                    text-transform: capitalize;
+                    font-weight: 100;
+                    max-width: 1100px;
+                    padding-left: 8px;    
+                    margin-top: -60px;
+                    margin-bottom: 0;
+                    align-self: flex-start;
+                    @media screen and (max-width: 768px){ 
+                        margin-top: 16px;
+                        text-align: center;
+                    }
+                }
+                h1{
+                    color: $blackNano;
+                    width: auto;
+                    font-size: 64px;
+                    text-align: left;
+                    text-transform: capitalize;
+                    font-weight: 200;
+                    max-width: 1100px;
+                    padding-left: 8px;
+                    margin-top: -12px;
+                    align-self: flex-start;
+                    @media screen and (max-width: 768px){ 
+                        font-size: 44px;
+                        text-align: center;
+                    }
+                }
+            }
+            .benefit{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 300px;
+                @media screen and (max-width: 991px){
+                    max-width: 500px;
+                }
+                @media screen and (max-width: 768px){
+                    width: 90%;
+                }
+                img{    
+                    width: auto;
+                    height: 75px;
+                }
+                h3{
+                    color: white;
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: bold;
+                    text-transform: unset;
+                    width: 100%;
+                }
+                p{
+                    color: white;
+                    font-size: 16px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .blue_lower{
+        width: 100%;
+        height: auto;
+        margin-bottom: -20vw;
+        z-index: 1;
+        img{
+            margin-bottom: 0;
+        }
+    }
+    .blue_upper{
+        margin-top: -5vw;
+        width: 100%;
+        height: auto;
+        margin-bottom: -8px;
+        z-index: 1;
+        @media screen and (max-width: 768px){ 
+            margin-top: 8vw;
+        }
+        img{
+            margin-bottom: 0;
+        }
+    }
+}
+.max{
+    max-width: 600px!important;
+}
+.margin_negative{
+    margin-bottom: -150px;
+}
+.responsive{
+    display: block;
+    @media screen and (max-width: 768px){ 
+        display: none;
+    }
+}
+.oposite_responsive{
+    display: none;
+    @media screen and (max-width: 768px){ 
+        display: block;
+    }
+}

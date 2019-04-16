@@ -1,0 +1,212 @@
+.advantage-content {
+    width: 100%;
+    margin: 5rem 0;
+    .advantage-information {
+        display: flex;
+        align-items: flex-start;
+        .image {
+            width: 47%;
+            img {
+                // max-height: 800px;
+                min-height: 600px;
+            }
+            .normal-image {
+                display: block;
+            }
+            .vertical-image {
+                display: none;
+            }
+        }
+        .advantage-text {
+            width: calc(53%);
+            max-width: 550px;
+            padding-left: 7rem;
+            .gray-title {
+                color: $grayNano;
+            }
+            .gray-subtitle {
+                font-family: 'Bahnschrift';
+                color: #4D4D4D;
+                font-size: 19px;
+            }
+            .gray-text {
+                color: #707070;
+                margin-bottom: 30px;
+            }
+            button {
+                margin-top: 16px;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .advantage-information {
+            flex-direction: column;
+            .image {
+                width: 85%;
+            }
+            .advantage-text {
+                width: 100%;
+                max-width: 100%;
+                padding: 0 32px;
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .advantage-information {
+            .image {
+                width: 90%;
+                img {
+                    max-height: 408px;
+                    min-height: 375px;
+                }
+            }
+        }
+    }
+}
+
+.margin {
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 2300px) {
+    .advantage-content .advantage-information .image {
+        justify-content: flex-end;
+        display: flex;
+        .normal-image {
+            display: none;
+        }
+        .vertical-image {
+            display: block;
+            height: 800px;
+            width: auto;
+            margin-bottom: -256px;
+        }
+    }
+}
+.modal-admin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    .close-modal{
+        position: relative;
+        top: 40px;
+        left: 18.5%;
+        color: black;
+        width: auto;
+        height: auto;
+        border-radius: 49%;
+        z-index: 1;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        @media screen and (max-width: 768px){
+            left: 41%;
+        }
+    }
+    .modal-admin-content {
+        background-color: rgb(255, 255, 255);
+        padding: 2rem;
+        width: 40%;
+        height: auto;
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        margin-top: 0rem;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        border-radius: 24px;
+        @media screen and (max-width: 768px){
+            width: 95%;
+        }
+        .gray{
+            color: #606060;
+            font-size: 24px;
+        }
+        .blue{
+            font-family: 'Bahnschrift';
+            color: #00A6DD;
+            font-weight: 500;
+            font-size: 40px;
+        }
+        .small{
+            font-size: 12px;
+        }
+        .inline {
+            width: 90%;
+            border: none;
+            height: 25px;
+            margin-top: 8px;
+            margin-bottom: 2rem;
+        }
+        form{
+            width: 100%;
+            padding-top: 40px;
+            input{
+                border: 1px transparent solid;
+                border-bottom: 1px #606060 solid
+            }
+            .flex{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+.submit{
+    background-color: #00A6DD;
+    border-radius: 24px;  
+    width: 200px;
+    height: 40px;
+    color: white;
+    margin-top: 12px;
+}
+.newmodal{
+    width: 30%!important;
+}
+.disable{
+    display: none!important;
+}
+.newdisable{
+    display: none!important;
+}
+.noneModal{
+    border-bottom: 1px red solid;
+    color: red;
+}
+.noerr{
+    display: none!important;
+}
+.red{
+    color: red!important;
+}
+.margin{
+    margin: 0 8px 4px 0!important;
+}
+.end{
+    justify-content: flex-end!important;
+}
+.left{
+    left: 13%!important;
+}
+.blues{
+    color: #00A6DD;
+    font-size: 40px;
+}
+.top{
+    margin-top: 16px;
+}
